@@ -44,12 +44,13 @@ namespace RedLock
 
 			foreach (var endPoint in redisEndPoints)
 			{
-				var configuration = new ConfigurationOptions
-				{
-					AbortOnConnectFail = false,
-					ConnectTimeout = endPoint.ConnectionTimeout ?? DefaultConnectionTimeout,
-					Ssl = endPoint.Ssl,
-					Password = endPoint.Password
+                var configuration = new ConfigurationOptions
+                {
+                    AbortOnConnectFail = false,
+                    ConnectTimeout = endPoint.ConnectionTimeout ?? DefaultConnectionTimeout,
+                    Ssl = endPoint.Ssl,
+                    Password = endPoint.Password,
+                    ResolveDns = true,
 				};
 
 				configuration.EndPoints.Add(endPoint.EndPoint);
