@@ -50,7 +50,6 @@ namespace RedLock
                     ConnectTimeout = endPoint.ConnectionTimeout ?? DefaultConnectionTimeout,
                     Ssl = endPoint.Ssl,
                     Password = endPoint.Password,
-                    ResolveDns = true,
 				};
 
 				configuration.EndPoints.Add(endPoint.EndPoint);

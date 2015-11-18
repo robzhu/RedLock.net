@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Rz.RedLock.net</id>
-    <version>1.6.2</version>
+    <version>1.6.3</version>
     <title>RedLock.net</title>
     <authors>Sam Cook</authors>
     <owners>Sam Cook</owners>
@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An implementation of the Redlock distributed lock algorithm</description>
     <releaseNotes>
+1.6.3 - Now uses StackExchange.Redis.Mono
 1.6.2 - ResolveDns is set to true
 
 1.6.1 - Add missing ConfigureAwait(false) to RedisLockFactory CreateAsync overload
@@ -31,6 +32,6 @@
   </metadata>
   <files>
     <file src="RedLock\bin\Release\RedLock.dll" target="lib\net45" />
-    <file src="RedLock_Net40\bin\Release\RedLock.dll" target="lib\net40" />
+    <!--<file src="RedLock_Net40\bin\Release\RedLock.dll" target="lib\net40" />-->
   </files>
 </package>
